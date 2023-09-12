@@ -11,6 +11,7 @@ import SwiftUI
 import Observation
 
 @Observable
+/// The viewModel for the event list
 public final class EventListViewModel {
     var client: TicketmasterClientProtocol
     var events: [Event] = []
@@ -21,10 +22,14 @@ public final class EventListViewModel {
     /// In practice this could come from a build environment value, of from a configuration setting
     static let apiKey = "DW0E98NrxUIfDDtNN7ijruVSm60ryFLX"
     
+    /// Create an EventListViewModel
+    /// - Parameter client: the `TicketasterClient` to use
     public init(client: TicketmasterClientProtocol? = nil) {
         self.client = client ?? TicketmasterClient(apiKey: Self.apiKey)
     }
     
+    /// Get all events matching the supplied keywork
+    /// - Parameter keyword: the keyword to search for
     func getEvents(keyword: String) async {
         guard !searching else { return }
         searching = true

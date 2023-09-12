@@ -10,6 +10,7 @@ import Network
 import Observation
 
 @Observable
+/// A type to monitor the network state and publish changes
 private final class NetworkMonitorViewModel {
     var showAlert = false
     let monitor = NWPathMonitor()

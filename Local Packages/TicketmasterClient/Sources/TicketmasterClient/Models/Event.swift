@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// An event returned from the TicketMaster API
 public struct Event: Identifiable, Decodable {
     public let id: String
     public let name: String
@@ -47,6 +48,7 @@ public struct Event: Identifiable, Decodable {
     }
 }
 
+/// An image for an `Event`
 public final class EventImage: Decodable {
     public let width: Int
     public let height: Int

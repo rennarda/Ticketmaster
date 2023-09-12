@@ -9,6 +9,7 @@ import SwiftUI
 import TicketmasterClient
 import CachedAsyncImage
 
+/// The main list of events
 struct EventList: View {
     @State var viewModel: EventListViewModel
     @State var searchText: String = ""
@@ -51,6 +52,7 @@ struct EventList: View {
     }
 }
 
+/// A row in the event list
 struct EventRow: View {
     let event: Event
     var body: some View {
