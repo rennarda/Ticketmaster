@@ -7,7 +7,6 @@
 
 import Foundation
 import TicketmasterClient
-import SwiftUI
 import Observation
 import SwiftData
 
@@ -19,7 +18,7 @@ public final class EventListViewModel {
     var error: Error?
     var showError = false
     
-    /// In practice this could come from a build environment value, of from a configuration setting
+    /// In practice this could come from a build environment value, or from a configuration setting
     static let apiKey = "DW0E98NrxUIfDDtNN7ijruVSm60ryFLX"
     
     public init(context: ModelContext, client: TicketmasterClientProtocol? = nil) {

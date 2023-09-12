@@ -11,7 +11,7 @@
 		A1CE25772AAF96560015B542 /* EventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE25762AAF96560015B542 /* EventList.swift */; };
 		A1CE257B2AAF96580015B542 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1CE257A2AAF96580015B542 /* Assets.xcassets */; };
 		A1CE257E2AAF96580015B542 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1CE257D2AAF96580015B542 /* Preview Assets.xcassets */; };
-		A1CE25882AAF96580015B542 /* EventListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE25872AAF96580015B542 /* EventListViewModel.swift */; };
+		A1CE25882AAF96580015B542 /* EventListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE25872AAF96580015B542 /* EventListViewModelTests.swift */; };
 		A1CE25922AAF96580015B542 /* TicketmasterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE25912AAF96580015B542 /* TicketmasterUITests.swift */; };
 		A1CE25942AAF96580015B542 /* TicketmasterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE25932AAF96580015B542 /* TicketmasterUITestsLaunchTests.swift */; };
 		A1CE25A42AAF96B10015B542 /* APIClient in Frameworks */ = {isa = PBXBuildFile; productRef = A1CE25A32AAF96B10015B542 /* APIClient */; };
@@ -46,7 +46,7 @@
 		A1CE257A2AAF96580015B542 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1CE257D2AAF96580015B542 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A1CE25832AAF96580015B542 /* TicketmasterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicketmasterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1CE25872AAF96580015B542 /* EventListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewModel.swift; sourceTree = "<group>"; };
+		A1CE25872AAF96580015B542 /* EventListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewModelTests.swift; sourceTree = "<group>"; };
 		A1CE258D2AAF96580015B542 /* TicketmasterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicketmasterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1CE25912AAF96580015B542 /* TicketmasterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketmasterUITests.swift; sourceTree = "<group>"; };
 		A1CE25932AAF96580015B542 /* TicketmasterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketmasterUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -130,7 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				A1DF80A32AB0A7EB003251A2 /* Mocks */,
-				A1CE25872AAF96580015B542 /* EventListViewModel.swift */,
+				A1CE25872AAF96580015B542 /* EventListViewModelTests.swift */,
 			);
 			path = TicketmasterTests;
 			sourceTree = "<group>";
@@ -303,7 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1DF80A52AB0A7FE003251A2 /* MockTicketmasterClient.swift in Sources */,
-				A1CE25882AAF96580015B542 /* EventListViewModel.swift in Sources */,
+				A1CE25882AAF96580015B542 /* EventListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,8 +14,8 @@
             filePath = "Local Packages/TicketmasterClient/Sources/TicketmasterClient/Models/Event.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
             landmarkName = "init(from:)"
             landmarkType = "7">
             <Locations>
@@ -49,23 +49,22 @@
                   endingLineNumber = "43"
                   offsetFromSymbolStart = "488">
                </Location>
+               <Location
+                  uuid = "127EC25B-8E33-4C55-BFC6-51415832B0EC - 3ed6ac03658c4985"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TicketmasterClient.Event.init(from: Swift.Decoder) throws -&gt; TicketmasterClient.Event"
+                  moduleName = "Ticketmaster"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/andy/Developer/Ticketmaster/Local%20Packages/TicketmasterClient/Sources/TicketmasterClient/Models/Event.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "568">
+               </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "B4D0B75D-A798-4DF5-9A83-C653A11483DB"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "TicketmasterTests/EventListViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "test_getEvents()"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
