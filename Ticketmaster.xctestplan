@@ -24,6 +24,7 @@
       }
     },
     {
+      "enabled" : false,
       "target" : {
         "containerPath" : "container:Ticketmaster.xcodeproj",
         "identifier" : "A1CE258C2AAF96580015B542",

@@ -15,6 +15,7 @@ struct TicketmasterApp: App {
             NavigationView {
                 EventList(viewModel: EventListViewModel())
             }
+            .networkAlert()
         }
     }
 }

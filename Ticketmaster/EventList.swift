@@ -7,6 +7,7 @@
 
 import SwiftUI
 import TicketmasterClient
+import CachedAsyncImage
 
 struct EventList: View {
     @State var viewModel: EventListViewModel
@@ -54,7 +55,7 @@ struct EventRow: View {
     let event: Event
     var body: some View {
         HStack {
-            AsyncImage(url: event.thumbnailImageURL) { image in
+            CachedAsyncImage(url: event.thumbnailImageURL) { image in
                 image.resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 100)

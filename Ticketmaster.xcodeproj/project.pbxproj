@@ -11,12 +11,15 @@
 		A1CE25772AAF96560015B542 /* EventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE25762AAF96560015B542 /* EventList.swift */; };
 		A1CE257B2AAF96580015B542 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1CE257A2AAF96580015B542 /* Assets.xcassets */; };
 		A1CE257E2AAF96580015B542 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1CE257D2AAF96580015B542 /* Preview Assets.xcassets */; };
-		A1CE25882AAF96580015B542 /* TicketmasterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE25872AAF96580015B542 /* TicketmasterTests.swift */; };
+		A1CE25882AAF96580015B542 /* EventListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE25872AAF96580015B542 /* EventListViewModel.swift */; };
 		A1CE25922AAF96580015B542 /* TicketmasterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE25912AAF96580015B542 /* TicketmasterUITests.swift */; };
 		A1CE25942AAF96580015B542 /* TicketmasterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE25932AAF96580015B542 /* TicketmasterUITestsLaunchTests.swift */; };
 		A1CE25A42AAF96B10015B542 /* APIClient in Frameworks */ = {isa = PBXBuildFile; productRef = A1CE25A32AAF96B10015B542 /* APIClient */; };
 		A1CE25A72AAF99F70015B542 /* TicketmasterClient in Frameworks */ = {isa = PBXBuildFile; productRef = A1CE25A62AAF99F70015B542 /* TicketmasterClient */; };
 		A1CE25AA2AB062E50015B542 /* EventListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE25A92AB062E50015B542 /* EventListViewModel.swift */; };
+		A1DF809D2AB09E22003251A2 /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = A1DF809C2AB09E22003251A2 /* CachedAsyncImage */; };
+		A1DF80A12AB0A361003251A2 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DF80A02AB0A361003251A2 /* NetworkMonitor.swift */; };
+		A1DF80A52AB0A7FE003251A2 /* MockTicketmasterClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DF80A42AB0A7FE003251A2 /* MockTicketmasterClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,12 +46,14 @@
 		A1CE257A2AAF96580015B542 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1CE257D2AAF96580015B542 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A1CE25832AAF96580015B542 /* TicketmasterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicketmasterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1CE25872AAF96580015B542 /* TicketmasterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketmasterTests.swift; sourceTree = "<group>"; };
+		A1CE25872AAF96580015B542 /* EventListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewModel.swift; sourceTree = "<group>"; };
 		A1CE258D2AAF96580015B542 /* TicketmasterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicketmasterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1CE25912AAF96580015B542 /* TicketmasterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketmasterUITests.swift; sourceTree = "<group>"; };
 		A1CE25932AAF96580015B542 /* TicketmasterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketmasterUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A1CE25A82AB05C100015B542 /* Ticketmaster.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Ticketmaster.xctestplan; sourceTree = "<group>"; };
 		A1CE25A92AB062E50015B542 /* EventListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewModel.swift; sourceTree = "<group>"; };
+		A1DF80A02AB0A361003251A2 /* NetworkMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkMonitor.swift; path = ../../BeachStatus/BeachStatus/Views/NetworkMonitor.swift; sourceTree = "<group>"; };
+		A1DF80A42AB0A7FE003251A2 /* MockTicketmasterClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTicketmasterClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1DF809D2AB09E22003251A2 /* CachedAsyncImage in Frameworks */,
 				A1CE25A42AAF96B10015B542 /* APIClient in Frameworks */,
 				A1CE25A72AAF99F70015B542 /* TicketmasterClient in Frameworks */,
 			);
@@ -105,6 +111,7 @@
 				A1CE25742AAF96560015B542 /* TicketmasterApp.swift */,
 				A1CE25762AAF96560015B542 /* EventList.swift */,
 				A1CE25A92AB062E50015B542 /* EventListViewModel.swift */,
+				A1DF80A02AB0A361003251A2 /* NetworkMonitor.swift */,
 				A1CE257A2AAF96580015B542 /* Assets.xcassets */,
 				A1CE257C2AAF96580015B542 /* Preview Content */,
 			);
@@ -122,7 +129,8 @@
 		A1CE25862AAF96580015B542 /* TicketmasterTests */ = {
 			isa = PBXGroup;
 			children = (
-				A1CE25872AAF96580015B542 /* TicketmasterTests.swift */,
+				A1DF80A32AB0A7EB003251A2 /* Mocks */,
+				A1CE25872AAF96580015B542 /* EventListViewModel.swift */,
 			);
 			path = TicketmasterTests;
 			sourceTree = "<group>";
@@ -134,6 +142,14 @@
 				A1CE25932AAF96580015B542 /* TicketmasterUITestsLaunchTests.swift */,
 			);
 			path = TicketmasterUITests;
+			sourceTree = "<group>";
+		};
+		A1DF80A32AB0A7EB003251A2 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				A1DF80A42AB0A7FE003251A2 /* MockTicketmasterClient.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +171,7 @@
 			packageProductDependencies = (
 				A1CE25A32AAF96B10015B542 /* APIClient */,
 				A1CE25A62AAF99F70015B542 /* TicketmasterClient */,
+				A1DF809C2AB09E22003251A2 /* CachedAsyncImage */,
 			);
 			productName = Ticketmaster;
 			productReference = A1CE25712AAF96560015B542 /* Ticketmaster.app */;
@@ -230,6 +247,7 @@
 			mainGroup = A1CE25682AAF96560015B542;
 			packageReferences = (
 				A1CE25A52AAF99F70015B542 /* XCLocalSwiftPackageReference "Local Packages/TicketmasterClient" */,
+				A1DF809B2AB09E22003251A2 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */,
 			);
 			productRefGroup = A1CE25722AAF96560015B542 /* Products */;
 			projectDirPath = "";
@@ -274,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1CE25AA2AB062E50015B542 /* EventListViewModel.swift in Sources */,
+				A1DF80A12AB0A361003251A2 /* NetworkMonitor.swift in Sources */,
 				A1CE25772AAF96560015B542 /* EventList.swift in Sources */,
 				A1CE25752AAF96560015B542 /* TicketmasterApp.swift in Sources */,
 			);
@@ -283,7 +302,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1CE25882AAF96580015B542 /* TicketmasterTests.swift in Sources */,
+				A1DF80A52AB0A7FE003251A2 /* MockTicketmasterClient.swift in Sources */,
+				A1CE25882AAF96580015B542 /* EventListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,6 +633,17 @@
 		};
 /* End XCLocalSwiftPackageReference section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		A1DF809B2AB09E22003251A2 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lorenzofiamingo/swiftui-cached-async-image.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		A1CE25A32AAF96B10015B542 /* APIClient */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -621,6 +652,11 @@
 		A1CE25A62AAF99F70015B542 /* TicketmasterClient */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = TicketmasterClient;
+		};
+		A1DF809C2AB09E22003251A2 /* CachedAsyncImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A1DF809B2AB09E22003251A2 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */;
+			productName = CachedAsyncImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
