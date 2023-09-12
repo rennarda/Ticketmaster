@@ -26,9 +26,8 @@ func loadJSON<T: Decodable>(from fileName: String, as type: T.Type) throws -> T 
     }
 
     // Decode the JSON data into the specified type
-    let decoder = JSONDecoder()
     do {
-        let decodedObject = try decoder.decode(type, from: jsonData)
+        let decodedObject = try T.decode(from: jsonData)
         return decodedObject
     } catch let DecodingError.dataCorrupted(context) {
         XCTFail(context.debugDescription)

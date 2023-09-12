@@ -1,0 +1,35 @@
+{
+  "configurations" : [
+    {
+      "id" : "41598444-D3D1-454F-9453-3BBCA226EDC8",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Ticketmaster.xcodeproj",
+      "identifier" : "A1CE25702AAF96560015B542",
+      "name" : "Ticketmaster"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Ticketmaster.xcodeproj",
+        "identifier" : "A1CE25822AAF96580015B542",
+        "name" : "TicketmasterTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Ticketmaster.xcodeproj",
+        "identifier" : "A1CE258C2AAF96580015B542",
+        "name" : "TicketmasterUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

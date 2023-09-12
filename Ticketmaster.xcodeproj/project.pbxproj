@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A1CE25752AAF96560015B542 /* TicketmasterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE25742AAF96560015B542 /* TicketmasterApp.swift */; };
-		A1CE25772AAF96560015B542 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE25762AAF96560015B542 /* ContentView.swift */; };
-		A1CE25792AAF96560015B542 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE25782AAF96560015B542 /* Item.swift */; };
+		A1CE25772AAF96560015B542 /* EventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE25762AAF96560015B542 /* EventList.swift */; };
 		A1CE257B2AAF96580015B542 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1CE257A2AAF96580015B542 /* Assets.xcassets */; };
 		A1CE257E2AAF96580015B542 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1CE257D2AAF96580015B542 /* Preview Assets.xcassets */; };
 		A1CE25882AAF96580015B542 /* TicketmasterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE25872AAF96580015B542 /* TicketmasterTests.swift */; };
@@ -17,6 +16,7 @@
 		A1CE25942AAF96580015B542 /* TicketmasterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE25932AAF96580015B542 /* TicketmasterUITestsLaunchTests.swift */; };
 		A1CE25A42AAF96B10015B542 /* APIClient in Frameworks */ = {isa = PBXBuildFile; productRef = A1CE25A32AAF96B10015B542 /* APIClient */; };
 		A1CE25A72AAF99F70015B542 /* TicketmasterClient in Frameworks */ = {isa = PBXBuildFile; productRef = A1CE25A62AAF99F70015B542 /* TicketmasterClient */; };
+		A1CE25AA2AB062E50015B542 /* EventListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CE25A92AB062E50015B542 /* EventListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +39,7 @@
 /* Begin PBXFileReference section */
 		A1CE25712AAF96560015B542 /* Ticketmaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ticketmaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1CE25742AAF96560015B542 /* TicketmasterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketmasterApp.swift; sourceTree = "<group>"; };
-		A1CE25762AAF96560015B542 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		A1CE25782AAF96560015B542 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		A1CE25762AAF96560015B542 /* EventList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventList.swift; sourceTree = "<group>"; };
 		A1CE257A2AAF96580015B542 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1CE257D2AAF96580015B542 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A1CE25832AAF96580015B542 /* TicketmasterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicketmasterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +47,8 @@
 		A1CE258D2AAF96580015B542 /* TicketmasterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicketmasterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1CE25912AAF96580015B542 /* TicketmasterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketmasterUITests.swift; sourceTree = "<group>"; };
 		A1CE25932AAF96580015B542 /* TicketmasterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketmasterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A1CE25A82AB05C100015B542 /* Ticketmaster.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = Ticketmaster.xctestplan; sourceTree = "<group>"; };
+		A1CE25A92AB062E50015B542 /* EventListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +81,7 @@
 		A1CE25682AAF96560015B542 = {
 			isa = PBXGroup;
 			children = (
+				A1CE25A82AB05C100015B542 /* Ticketmaster.xctestplan */,
 				A1CE25732AAF96560015B542 /* Ticketmaster */,
 				A1CE25862AAF96580015B542 /* TicketmasterTests */,
 				A1CE25902AAF96580015B542 /* TicketmasterUITests */,
@@ -101,8 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				A1CE25742AAF96560015B542 /* TicketmasterApp.swift */,
-				A1CE25762AAF96560015B542 /* ContentView.swift */,
-				A1CE25782AAF96560015B542 /* Item.swift */,
+				A1CE25762AAF96560015B542 /* EventList.swift */,
+				A1CE25A92AB062E50015B542 /* EventListViewModel.swift */,
 				A1CE257A2AAF96580015B542 /* Assets.xcassets */,
 				A1CE257C2AAF96580015B542 /* Preview Content */,
 			);
@@ -271,8 +273,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1CE25772AAF96560015B542 /* ContentView.swift in Sources */,
-				A1CE25792AAF96560015B542 /* Item.swift in Sources */,
+				A1CE25AA2AB062E50015B542 /* EventListViewModel.swift in Sources */,
+				A1CE25772AAF96560015B542 /* EventList.swift in Sources */,
 				A1CE25752AAF96560015B542 /* TicketmasterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

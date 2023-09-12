@@ -14,7 +14,7 @@ public enum HTTPMethod: String {
     case delete = "DELETE"
 }
 
-enum APIError: Error, LocalizedError {
+public enum APIError: Error, LocalizedError {
     case notImplemented
     case invalidURL
     case invalidResponse
