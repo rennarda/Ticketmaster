@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SwiftData
 import TicketmasterClient
 import CachedAsyncImage
 
@@ -14,10 +15,12 @@ struct EventList: View {
     @State var searchText: String = ""
     @State var showSearch = false
     
+    @Query var events: [Event]
+
     var body: some View {
         ZStack {
             List {
-                ForEach(viewModel.events) { event in
+                ForEach(events) { event in
                     EventRow(event: event)
                 }
             }
@@ -74,11 +77,5 @@ struct EventRow: View {
                 }
             }
         }
-    }
-}
-
-#Preview {
-    NavigationView {
-        EventList(viewModel: EventListViewModel())
     }
 }
