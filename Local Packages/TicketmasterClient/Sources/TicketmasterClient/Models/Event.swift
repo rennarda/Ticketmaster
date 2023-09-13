@@ -6,18 +6,21 @@
 //
 
 import Foundation
+import SwiftData
 
-/// An event returned from the TicketMaster API
-public struct Event: Identifiable, Decodable {
+@Model
+public final class Event: Identifiable, Decodable {
     public let id: String
     public let name: String
+    
+    @Relationship(deleteRule: .cascade)
     public let images: [EventImage]
     public let date: Date?
-    
-    public var thumbnailImageURL: URL? {
+        
+    public func imageOfWidthOrLess(_ requiredWidth: Int) -> URL? {
         images
             .sorted(by: {$0.width > $1.width})
-            .first(where: {$0.width < 500})?.url
+            .first(where: {$0.width < requiredWidth})?.url
     }
     
     public init(id: String, name: String, date: Date, images: [EventImage]) {
@@ -48,7 +51,7 @@ public struct Event: Identifiable, Decodable {
     }
 }
 
-/// An image for an `Event`
+@Model
 public final class EventImage: Decodable {
     public let width: Int
     public let height: Int
@@ -58,5 +61,18 @@ public final class EventImage: Decodable {
         self.width = width
         self.height = height
         self.url = url
+    }
+    
+    private enum CodingKeys: String, CodingKey {
+        case width
+        case height
+        case url
+    }
+    
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        self.width = try container.decode(Int.self, forKey: .width)
+        self.height = try container.decode(Int.self, forKey: .height)
+        self.url = try container.decode(URL.self, forKey: .url)
     }
 }

@@ -7,6 +7,7 @@
 
 import Foundation
 import TicketmasterClient
+import SwiftData
 
 class MockTicketmasterClient: TicketmasterClientProtocol {
     var error: Error?
