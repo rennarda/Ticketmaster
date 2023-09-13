@@ -28,7 +28,7 @@ struct EventList: View {
             if viewModel.searching {
                 VStack(spacing: 10) {
                     ProgressView()
-                    Text("Loading…").foregroundColor(.secondary)
+                    Text("loading").foregroundColor(.secondary)
                 }
                 .padding(40)
                 .background {
@@ -39,15 +39,15 @@ struct EventList: View {
 
         }
         .listStyle(.plain)
-        .searchable(text: $searchText, isPresented: $showSearch, prompt: "Search for a event or location")
+        .searchable(text: $searchText, isPresented: $showSearch, prompt: "searchPrompt")
         .onSubmit(of: .search) {
             showSearch = false
             Task {
                 await viewModel.getEvents(keyword: searchText)
             }
         }
-        .alert("Error", isPresented: $viewModel.showError) {
-            Button("OK", role: .cancel){}
+        .alert("error", isPresented: $viewModel.showError) {
+            Button("ok", role: .cancel){}
         } message: {
             Text(viewModel.error?.localizedDescription ?? "")
         }
@@ -55,17 +55,20 @@ struct EventList: View {
 }
 
 struct EventRow: View {
+    @Environment(\.displayScale) var displayScale: CGFloat
     let event: Event
+    static let imageWidth = 100
+    
     var body: some View {
         HStack {
-            CachedAsyncImage(url: event.thumbnailImageURL) { image in
+            CachedAsyncImage(url: event.imageOfWidthOrLess(Self.imageWidth * Int(displayScale))) { image in
                 image.resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 100)
+                    .frame(width: CGFloat(integerLiteral: Self.imageWidth))
             } placeholder: {
                 Image(systemName: "photo")
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 100)
+                    .frame(width: CGFloat(integerLiteral: Self.imageWidth))
             }
             VStack(alignment: .leading) {
                 Text(event.name)

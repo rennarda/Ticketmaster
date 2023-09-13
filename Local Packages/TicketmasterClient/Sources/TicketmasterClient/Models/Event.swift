@@ -16,11 +16,11 @@ public final class Event: Identifiable, Decodable {
     @Relationship(deleteRule: .cascade)
     public let images: [EventImage]
     public let date: Date?
-    
-    public var thumbnailImageURL: URL? {
+        
+    public func imageOfWidthOrLess(_ requiredWidth: Int) -> URL? {
         images
             .sorted(by: {$0.width > $1.width})
-            .first(where: {$0.width < 500})?.url
+            .first(where: {$0.width < requiredWidth})?.url
     }
     
     public init(id: String, name: String, date: Date, images: [EventImage]) {
